@@ -49,6 +49,11 @@ public class HtmlcoinMainNetParams extends AbstractBitcoinNetParams {
         // Having these here simplifies block connection logic considerably.
         checkpoints.put(0, Sha256Hash.wrap("0000bf23c6424c270a24a17a3db723361c349e0f966d7b55a6bca4bfb2d951b0"));
         checkpoints.put(798, Sha256Hash.wrap("00002847d05b6fe46570b754815309123bedcb84a5ac2ae58fa1d38957ccb772"));
+        checkpoints.put(211401, Sha256Hash.wrap("00000000000a2142cf5781b89170e7fd2d1fb22b92a7f3878e8199378e32a54b"));
+        checkpoints.put(308971, Sha256Hash.wrap("000000000002e13479422a602499ceff5699ae3bb21bc5ebf2b12257d3da7b4e"));
+        checkpoints.put(526446, Sha256Hash.wrap("00000000000eb8bd8570a6249d2592a2747bb1c8d3f9f1a7e9d668353825e7b2"));
+        checkpoints.put(950000, Sha256Hash.wrap("1cceb9762ceae24c7a1e5b67e6e22122f561fc95effee4ae94a730763b04c10c"));
+        checkpoints.put(1231400, Sha256Hash.wrap("00000000000f9073f18564f8d0c3059e61d0617735bc500d9837799a0354f8d4"));
 
         dnsSeeds = new String[] {
                 "seed1.htmlcoin.com",
@@ -62,7 +67,7 @@ public class HtmlcoinMainNetParams extends AbstractBitcoinNetParams {
                 // Andreas Schildbach
                 new HttpDiscovery.Details(
                         ECKey.fromPublicOnly(Utils.HEX.decode("0238746c59d46d5408bf8b1d0af5740fe1a6e1703fcb56b2953f0b965c740d256f")),
-                        URI.create("http://httpseed.bitcoin.schildbach.de/peers")
+                        URI.create("https://httpseed.htmlcoin.com/peers")
                 )
         };
 
