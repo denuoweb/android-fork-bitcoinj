@@ -151,7 +151,7 @@ public abstract class NetworkParameters {
     }
 
     public static final int TARGET_TIMESPAN = 14 * 24 * 60 * 60;  // 2 weeks per difficulty cycle, on average.
-    public static final int TARGET_SPACING = 10 * 60;  // 10 minutes per block.
+    public static final int TARGET_SPACING = 1 * 60;  // 1 minutes per block.
     public static final int INTERVAL = TARGET_TIMESPAN / TARGET_SPACING;
     
     /**
@@ -232,7 +232,7 @@ public abstract class NetworkParameters {
     @Nullable
     public static NetworkParameters fromID(String id) {
         if (id.equals(ID_MAINNET)) {
-            return MainNetParams.get();
+            return HtmlcoinMainNetParams.get();
         } else if (id.equals(ID_TESTNET)) {
             return TestNet3Params.get();
         } else if (id.equals(ID_UNITTESTNET)) {
